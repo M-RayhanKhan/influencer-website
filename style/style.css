@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/* shear style */
+.display-flex {
+    display: flex;
+}
+
+header {
+    background: rgb(255, 255, 255);
+    max-width: 1150px;
+    margin: 0 auto;
+    /* border: 2px solid darkcyan; */
+}
+
+/* navbar style here */
+nav {
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h4 {
+    color: rgb(58, 58, 58);
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+nav ul {
+    gap: 30px;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(58, 58, 58);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/* banner style start here */
+.banner{
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.banner-content{
+    max-width: 500px;
+}
+
+.banner h1 {
+    color: rgb(58, 58, 58);
+    font-family: Poppins;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.banner p {
+    color: rgb(58, 58, 58);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.banner button {
+    padding: 12px 24px;
+    border-radius: 41px;
+    background: rgb(224, 44, 109);
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.banner-img{
+   
+    padding: 10px 10px 5px 0;
+    border-top: 2px dashed rgb(204, 198, 198);
+    border-right: 2px dashed rgb(204, 198, 198);
+    border-bottom: 2px dashed rgb(204, 198, 198);
+}
+.banner-img img{
+    border: 2px dashed rgb(204, 198, 198);
+    /* padding: 4px; */
+    width: 380px;
+}
+/* banner style end here */
+
+
+
+
+
+/* media query sm devise responsive */
+
+@media screen and (max-width: 576px) {
+
+    nav,
+    ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        line-height: 0px;
+        justify-content: center;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        margin: 5px;
+    }
+    .banner-content{
+        text-align: center;
+    }
+    .banner-content h1{
+        margin-bottom: 0px;
+        font-size: 2rem;
+    }
+    .banner-img{
+        margin: 20px;
+        border: none;
+    }
+    .banner-img img{
+        width: 300px;
+        margin: 0 auto;
+        border: none;
+    }
+    .banner-btn{
+        justify-content: center;
+    }
+  
+}
+/* medium devise responsive */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .banner{
+        justify-content: center;
+    }
+    .banner-content{
+        width: auto;
+        /* gap: 20px; */
+    }
+    .banner-content h1{
+        font-size: 2rem;
+    }
+    .banner-img img{
+        width: 250px;
+        margin: 0 auto;
+        border: none;
+    }
+}
